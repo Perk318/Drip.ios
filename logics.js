@@ -94,8 +94,11 @@ console.log(color)
 
 let submit = document.getElementById("submit")
 let result = document.getElementById('result')
+let original = document.getElementById('document')
  submit.addEventListener('click', () => {
     result.value = randomColor
     console.log(randomColor)
+    original.value = getColor
+    console.log(getColor())
  })
  // console.log(getRandomInt(1))
